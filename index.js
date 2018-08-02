@@ -40,6 +40,7 @@ Strategy.prototype.userProfile = function (accessToken, done) {
         fullName: json.name,
         firstName: json.given_name,
         lastName: json.family_name,
+        fullInfo: json,
         username: json.preferred_username,
         email,
         avatar: json.avatar,
