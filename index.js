@@ -54,4 +54,12 @@ Strategy.prototype.userProfile = function (accessToken, done) {
   });
 };
 
+Strategy.prototype.authorizationParams = function (options) {
+  var params = {};
+  if (options.scope) {
+    params.scope = options.scope
+  }
+  return params;
+};
+
 module.exports = Strategy;
